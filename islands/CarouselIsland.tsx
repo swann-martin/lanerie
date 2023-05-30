@@ -26,6 +26,26 @@ const SLIDE_DATA = [
     text: "Jouets pour petits et grands",
     url: asset("/illustration/jouets.jpg"),
   },
+  {
+    color: "bg-gray-300",
+    text: "Des bilboquets",
+    url: asset("/illustration/bilboquet.jpg"),
+  },
+  {
+    color: "bg-green-300",
+    text: "Jeux de go",
+    url: asset("/illustration/assiete.jpg"),
+  },
+  {
+    color: "bg-yellow-300",
+    text: "Crèche de noël",
+    url: asset("/illustration/creche.jpg"),
+  },
+  {
+    color: "bg-blue-300",
+    text: "L'atelier",
+    url: asset("/illustration/atelier.jpg"),
+  },
 ];
 
 type SlideProps = {
@@ -45,10 +65,10 @@ const Slide = (props: SlideProps) => {
   return (
     <div
       key={key}
-      class={`${props.class} ${color} h-80 w-full text-center text-white p-5`}
+      class={`${color} h-96 w-full text-center text-white font-bold p-5 ${props.class}`}
     >
-      {text}
-      <img src={url} className="h-full w-full object-cover object-center" />
+      <img src={url} className="h-80 w-full object-cover object-center" />
+      <p>{text}</p>
     </div>
   );
 };
@@ -63,7 +83,8 @@ type CarouselProps = {
 
 const Carousel = (props: CarouselProps) => {
   const NAVIGATION_COLOR = `hover:text-gray-300 text-white`;
-  const CHEVRON_STYLE = `absolute z-30 w-10 h-10 ${NAVIGATION_COLOR} cursor-pointer`;
+  const CHEVRON_STYLE =
+    `absolute z-30 w-10 h-10 ${NAVIGATION_COLOR} cursor-pointer`;
   const SHOW_NAVIGATION = props.showNavigation === false ? false : true;
   const SLIDE_INTERVAL = props.interval ? props.interval : 3500;
   const currentSlide = useSignal(props.currentSlide ? props.currentSlide : 0);
@@ -142,9 +163,7 @@ const Carousel = (props: CarouselProps) => {
 
   const DotsNavigation = () => (
     <div
-      class={
-        "slide_nav z-30 w-full absolute bottom-0 flex justify-center cursor-pointer"
-      }
+      class={"slide_nav z-30 w-full absolute bottom-0 flex justify-center cursor-pointer"}
     >
       {SLIDE_DATA.map((_item, idx) => {
         return (

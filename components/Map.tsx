@@ -85,7 +85,8 @@ export default function Map() {
               allowFullScreen
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            >
+            </iframe>
           </div>
         </div>
       </div>
@@ -123,7 +124,7 @@ export default function Map() {
               target="_blank"
               href="https://www.facebook.com/profile.php?id=100088335698134"
             >
-              facebook.com/profile.php?id=100088335698134
+              facebook
             </a>
           </p>
         </div>

@@ -16,40 +16,40 @@ export default function Home() {
           <HeaderComponent title="Home" active="/" />
           <div class="flex justify-center"></div>
 
-          <section>
-            <Hero />
-            <Carousel />
-            <div className={"grid grid-cols-2 gap-6"}>
-              <ul className={"text-justify flex flex-wrap"}>
-                {[
-                  "toupies",
-                  "assietes",
-                  "cuillères",
-                  "bols",
-                  "saladiers",
-                  "cuillères à miel",
-                  "bilboquets",
-                  "cheval à bascule",
-                  "petites voitures",
-                  "train",
-                  "avions",
-                  "santons",
-                  "crèche de noël",
-                  "décorations de noël",
-                  "croix",
-                  "bijoux",
-                  "...",
-                ].map((el: string) => (
-                  <li className="">
-                    <span class="inline-block px-2 py-1 text-xs font-semibold leading-none bg-green-200 text-green-800 rounded-full">
-                      #{el}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <Hero />
+          <Carousel />
+          <div className={"grid grid-cols-2 gap-6"}>
+            <ul className={"text-justify flex flex-wrap"}>
+              {[
+                "toupies",
+                "assietes",
+                "cuillères",
+                "bols",
+                "saladiers",
+                "cuillères à miel",
+                "bilboquets",
+                "cheval à bascule",
+                "petites voitures",
+                "train",
+                "avions",
+                "santons",
+                "crèche de noël",
+                "décorations de noël",
+                "croix",
+                "bijoux",
+                "...",
+              ].map((el: string) => (
+                <li className="">
+                  <span class="inline-block px-2 py-1 text-xs font-semibold leading-none bg-green-200 text-green-800 rounded-full">
+                    #{el}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <section id="contact">
+            <Map />
           </section>
-          <Map />
           <FooterComponent />
         </section>
       </main>

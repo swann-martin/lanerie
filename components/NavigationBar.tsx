@@ -14,17 +14,16 @@ export default function NavigationBar(props: {
     },
     {
       name: "Contact",
-      href: "/contact",
+      href: "/#contact",
     },
   ];
   const isHome = props.active == "/";
 
   return (
     <nav
-      class={
-        "flex left flex justify-between items-center w-full " + props.class ??
-        ""
-      }
+      class={"flex left flex justify-between items-center w-full sticky top-0 z-10" +
+          props.class ??
+        ""}
     >
       <Logo />
       <ul class="flex justify-center items-center gap-4 mx-4 my-6 flex-wrap">
@@ -34,22 +33,14 @@ export default function NavigationBar(props: {
               href={item.href}
               class={`p-2 ${
                 isHome ? "text-white" : "text-gray-100"
-              } hover:underline ${
-                props.active == item.href ? "font-bold" : ""
+              } hover:text-green-200 ${
+                props.active == item.href ? "font-bold text-green-200" : ""
               }`}
             >
               {item.name}
             </a>
           </li>
         ))}
-        <li class="flex items-center">
-          <a
-            href="https://github.com/swann-martin/portfolio"
-            class="hover:text-red-600 inline-block"
-          >
-            <Icons.GitHub />
-          </a>
-        </li>
       </ul>
     </nav>
   );
@@ -57,7 +48,7 @@ export default function NavigationBar(props: {
 function Logo() {
   return (
     <a href="/" class="flex mr-3 items-center">
-      <img src="/logo.png" alt="L'anerie logo" width={40} height={40} />
+      <img src="/logo.svg" alt="L'anerie logo" width={40} height={40} />
     </a>
   );
 }

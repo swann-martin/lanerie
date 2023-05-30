@@ -18,8 +18,8 @@ export default function Hero() {
                 tournés du quotidien ou sur commande
               </p>
 
-              <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                Voir les articles
+              <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-600 rounded-lg lg:w-auto hover:bg-green-500 focus:outline-none focus:bg-green-500">
+                Voir les créations
               </button>
             </div>
           </div>
