@@ -9,12 +9,12 @@ export default function Hero() {
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
               <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
-                Le meilleurs endroit pour acheter <br /> vos{" "}
+                Le meilleur endroit pour commander <br /> vos{" "}
                 <span className="text-green-500 ">jouets en bois</span>
               </h1>
 
               <p className="mt-3 text-gray-600 dark:text-gray-400">
-                L'anerie vous propose un large choix de jouets en bois, objets
+                L'Anerie vous propose un large choix de jouets en bois, objets
                 tournés du quotidien ou sur commande
               </p>
 

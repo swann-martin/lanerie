@@ -1,10 +1,11 @@
-import { useRef, useState } from "preact/hooks";
+import { useEffect, useRef, useState } from "preact/hooks";
 import { IconMinus, IconPlus } from "../components/Icons.tsx";
 
-interface AccordionProps {
+export type AccordionProps = {
   title: string;
   content: string;
-}
+  isOpen?: boolean;
+};
 
 export default function Accordion(props: AccordionProps) {
   const [active, setActive] = useState(false);
@@ -12,6 +13,12 @@ export default function Accordion(props: AccordionProps) {
   const [rotate, setRotate] = useState("transform duration-700 ease");
 
   const contentSpace = useRef(null);
+
+  useEffect(() => {
+    props.isOpen && toggleAccordion();
+    return () => {
+    };
+  }, []);
 
   function toggleAccordion() {
     setActive((prevState) => !prevState);

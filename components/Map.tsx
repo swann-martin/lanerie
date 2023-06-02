@@ -1,8 +1,8 @@
 import { Enveloppe, Facebook, Instagram, MapPin, Phone } from "./Icons.tsx";
 
-export default function Map() {
+export default function Map(props: { class?: string }) {
   return (
-    <section class="">
+    <section class={`${props.class ?? ""}`}>
       <div class="container  py-12 mx-auto">
         <div>
           <p class="font-medium text-green-500 ">Informations de contact</p>

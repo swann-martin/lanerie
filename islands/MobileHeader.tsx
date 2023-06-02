@@ -14,13 +14,11 @@ export default function MobileHeader(
       <div class="flex h-12 flex-row items-center justify-between gap-6 px-4">
         <div>
           <div class="flex items-center gap-2">
-            {props.isBlogDetailHeader ? <div>{props.title}</div> : (
-              <img
-                class="h-8 w-8 rounded-full"
-                src={asset("logo.svg")}
-                alt="logo"
-              />
-            )}
+            <img
+              class="h-8 w-8 rounded-full"
+              src={asset("logo.svg")}
+              alt="logo"
+            />
           </div>
         </div>
         <div class="flex min-h-screen items-center justify-center">

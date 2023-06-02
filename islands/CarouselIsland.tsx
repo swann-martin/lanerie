@@ -8,43 +8,48 @@ import IconCircleChevronsLeft from "https://deno.land/x/tabler_icons_tsx@0.0.3/t
 const SLIDE_DATA = [
   {
     color: "bg-gray-300",
-    text: "Un coeur",
-    url: asset("/illustration/heart.jpg"),
+    text: "Bijoux : un pendentif en coeur",
+    url: asset("/illustration/heart.webp"),
   },
   {
     color: "bg-green-300",
-    text: "Des toupies",
-    url: asset("/illustration/toupies.jpg"),
+    text: "Jouets pour petits et grands : des toupies",
+    url: asset("/illustration/toupies.webp"),
   },
   {
     color: "bg-yellow-300",
-    text: "Bol et cuillère à miel",
-    url: asset("/illustration/bol.jpg"),
+    text: "Objets du quotidien : bol et cuillère à miel",
+    url: asset("/illustration/bol.webp"),
   },
   {
     color: "bg-blue-300",
-    text: "Jouets pour petits et grands",
-    url: asset("/illustration/jouets.jpg"),
+    text: "Jouets pour petits et grands : un cheval à bascule",
+    url: asset("/illustration/jouets.webp"),
   },
   {
     color: "bg-gray-300",
-    text: "Des bilboquets",
-    url: asset("/illustration/bilboquet.jpg"),
+    text: "Jouets pour petits et grands : des bilboquets",
+    url: asset("/illustration/bilboquet.webp"),
   },
   {
     color: "bg-green-300",
-    text: "Jeux de go",
-    url: asset("/illustration/assiete.jpg"),
+    text: "Jouets pour petits et grands : jeux de go",
+    url: asset("/illustration/assiete.webp"),
   },
   {
     color: "bg-yellow-300",
-    text: "Crèche de noël",
-    url: asset("/illustration/creche.jpg"),
+    text: "Décorations de noël : la crèche",
+    url: asset("/illustration/creche.webp"),
+  },
+  {
+    color: "bg-yellow-300",
+    text: "Décorations de noël : des boules de noël",
+    url: asset("/illustration/balls.webp"),
   },
   {
     color: "bg-blue-300",
     text: "L'atelier",
-    url: asset("/illustration/atelier.jpg"),
+    url: asset("/illustration/atelier.webp"),
   },
 ];
 

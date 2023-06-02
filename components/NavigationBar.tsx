@@ -26,6 +26,7 @@ export default function NavigationBar(props: {
         ""}
     >
       <Logo />
+
       <ul class="flex justify-center items-center gap-4 mx-4 my-6 flex-wrap">
         {items.map((item) => (
           <li>
@@ -47,8 +48,9 @@ export default function NavigationBar(props: {
 }
 function Logo() {
   return (
-    <a href="/" class="flex mr-3 items-center">
+    <a href="/" className="flex mr-3 items-center">
       <img src="/logo.svg" alt="L'anerie logo" width={40} height={40} />
+      <span className="ml-2 hidden md:block text-4xl font-bold">L'Anerie</span>
     </a>
   );
 }
