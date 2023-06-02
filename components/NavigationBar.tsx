@@ -5,11 +5,11 @@ export default function NavigationBar(props: {
 }) {
   const items = [
     {
-      name: "Home",
+      name: "Accueil",
       href: "/",
     },
     {
-      name: "About",
+      name: "A propos",
       href: "/about",
     },
     {
