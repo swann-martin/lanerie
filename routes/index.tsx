@@ -1,15 +1,28 @@
-import { Head } from "$fresh/runtime.ts";
+import { asset, Head } from "$fresh/runtime.ts";
+import { PageProps } from "https://deno.land/x/fresh@1.1.5/src/server/mod.ts";
 import FooterComponent from "../components/FooterComponent.tsx";
 import HeaderComponent from "../components/Header.tsx";
 import Hero from "../components/Hero.tsx";
 import Map from "../components/Map.tsx";
 import Carousel from "../islands/CarouselIsland.tsx";
 
-export default function Home() {
+export default function Home(props: PageProps) {
+  const TITLE = "L'anerie - L'atelier du bois";
+  const DESCRIPTION =
+    "L'anerie - L'atelier du bois, situé à 11 Intras, Blond, France. Vous pouvez y acheter des jouets, des objets du quotidien ou demander un devis pour un objet unique.";
+  const ogImageUrl =
+    new URL(asset("/illustration/L'Anerie.webp"), props.url).href;
+
   return (
     <>
       <Head>
         <title>L'anerie - L'atelier du bois</title>
+        <meta name="description" content={DESCRIPTION} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={props.url.href} />
+        <meta property="og:image" content={ogImageUrl} />
       </Head>
       <main class="bg-black min-h-screen text-white mx-auto">
         <section class="p-4 max-w-screen-lg mx-auto">
