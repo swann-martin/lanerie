@@ -13,21 +13,24 @@ export default function Hero() {
                 <span className="text-green-500 ">jouets en bois</span>
               </h1>
 
-              <p className="mt-3 text-gray-600 dark:text-gray-400">
+              <p className="mt-3 mb-10 text-gray-600 dark:text-gray-400">
                 L'Anerie vous propose un large choix de jouets en bois, objets
                 tournés du quotidien ou sur commande
               </p>
 
-              <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-600 rounded-lg lg:w-auto hover:bg-green-500 focus:outline-none focus:bg-green-500">
+              <a
+                href={"/#projects"}
+                className="w-full px-5 py-2  text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-600 rounded-lg lg:w-auto hover:bg-green-500 focus:outline-none focus:bg-green-500"
+              >
                 Voir les créations
-              </button>
+              </a>
             </div>
           </div>
 
           <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
             <img
               className="w-full h-full lg:max-w-3xl"
-              src="/illustration/jouets.jpg"
+              src="/illustration/jouets.webp"
               alt=""
             />
           </div>
