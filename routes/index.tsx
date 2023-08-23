@@ -7,16 +7,16 @@ import Map from "../components/Map.tsx";
 import Carousel from "../islands/CarouselIsland.tsx";
 
 export default function Home(props: PageProps) {
-  const TITLE = "L'anerie - L'atelier du bois";
+  const TITLE = "La menuiserie Joire - L'atelier du bois";
   const DESCRIPTION =
-    "L'anerie - L'atelier du bois, situé à 11 Intras, Blond, France. Vous pouvez y acheter des jouets, des objets du quotidien ou demander un devis pour un objet unique.";
+    "Le menuisier Joire réalise divers travaux de menuiserie et autres services. Vous pouvez y acheter des jouets, des objets du quotidien ou demander un devis pour un objet unique.";
   const ogImageUrl =
     new URL(asset("/illustration/L'Anerie.webp"), props.url).href;
 
   return (
     <>
       <Head>
-        <title>L'anerie - L'atelier du bois</title>
+        <title>Menuiserie Joire- L'atelier du bois</title>
         <meta name="description" content={DESCRIPTION} />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />

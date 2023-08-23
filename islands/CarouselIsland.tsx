@@ -7,47 +7,52 @@ import IconCircleChevronsLeft from "https://deno.land/x/tabler_icons_tsx@0.0.3/t
 
 const SLIDE_DATA = [
   {
-    color: "bg-gray-300",
+    color: "bg-green-200",
+    text: "Commande : une enseigne en bois",
+    url: asset("/illustration/menuisier.webp"),
+  },
+  {
+    color: "bg-gray-200",
     text: "Bijoux : un pendentif en coeur",
     url: asset("/illustration/heart.webp"),
   },
   {
-    color: "bg-green-300",
+    color: "bg-green-200",
     text: "Jouets pour petits et grands : des toupies",
     url: asset("/illustration/toupies.webp"),
   },
   {
-    color: "bg-yellow-300",
+    color: "bg-gray-200",
     text: "Objets du quotidien : bol et cuillère à miel",
     url: asset("/illustration/bol.webp"),
   },
   {
-    color: "bg-blue-300",
+    color: "bg-green-200",
     text: "Jouets pour petits et grands : un cheval à bascule",
     url: asset("/illustration/jouets.webp"),
   },
   {
-    color: "bg-gray-300",
+    color: "bg-gray-200",
     text: "Jouets pour petits et grands : des bilboquets",
     url: asset("/illustration/bilboquet.webp"),
   },
   {
-    color: "bg-green-300",
+    color: "bg-green-200",
     text: "Jouets pour petits et grands : jeux de go",
     url: asset("/illustration/assiete.webp"),
   },
   {
-    color: "bg-yellow-300",
+    color: "bg-gray-200",
     text: "Décorations de noël : la crèche",
     url: asset("/illustration/creche.webp"),
   },
   {
-    color: "bg-yellow-300",
+    color: "bg-green-200",
     text: "Décorations de noël : des boules de noël",
     url: asset("/illustration/balls.webp"),
   },
   {
-    color: "bg-blue-300",
+    color: "bg-gray-200",
     text: "L'atelier",
     url: asset("/illustration/atelier.webp"),
   },

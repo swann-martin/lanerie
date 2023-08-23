@@ -50,7 +50,9 @@ function Logo() {
   return (
     <a href="/" className="flex mr-3 items-center">
       <img src="/logo.svg" alt="L'anerie logo" width={40} height={40} />
-      <span className="ml-2 hidden md:block text-4xl font-bold">L'Anerie</span>
+      <span className="ml-2 hidden md:block text-4xl font-bold">
+        Menuiserie Joire
+      </span>
     </a>
   );
 }

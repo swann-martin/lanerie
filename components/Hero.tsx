@@ -9,18 +9,19 @@ export default function Hero() {
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
               <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
-                Le meilleur endroit pour commander <br /> vos{" "}
-                <span className="text-green-500 ">jouets en bois</span>
+                Le meilleur endroit pour donner vie à vos <br /> vos{" "}
+                <span className="text-green-500 ">envies de bois</span>
               </h1>
 
               <p className="mt-3 mb-10 text-gray-600 dark:text-gray-400">
-                L'Anerie vous propose un large choix de jouets en bois, objets
-                tournés du quotidien ou sur commande
+                La menuiserie Joire vous propose un large choix de services,
+                portes, fenêtres, volets, escaliers, tables, jouets en bois,
+                objets tournés du quotidien ou sur commande
               </p>
 
               <a
                 href={"/#projects"}
-                className="w-full px-5 py-2  text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-600 rounded-lg lg:w-auto hover:bg-green-500 focus:outline-none focus:bg-green-500"
+                className="w-full px-5 py-2  text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-400 rounded-lg lg:w-auto hover:bg-green-500 focus:outline-none focus:bg-green-500"
               >
                 Voir les créations
               </a>
