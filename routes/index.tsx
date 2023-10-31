@@ -10,8 +10,8 @@ export default function Home(props: PageProps) {
   const TITLE = "La menuiserie Joire - L'atelier du bois";
   const DESCRIPTION =
     "Le menuisier Joire réalise divers travaux de menuiserie et autres services. Vous pouvez y acheter des jouets, des objets du quotidien ou demander un devis pour un objet unique.";
-  const ogImageUrl =
-    new URL(asset("/illustration/L'Anerie.webp"), props.url).href;
+  const ogImageUrl = new URL(asset("/illustration/L'anerie.webp"), props.url)
+    .href;
 
   return (
     <>
